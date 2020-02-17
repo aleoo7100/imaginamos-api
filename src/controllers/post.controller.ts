@@ -2,7 +2,6 @@ import {Request, Response} from 'express';
 import Post from '../models/Post.model'; 
 import User from '../models/User.model';
 import Amigo from '../models/Amigo.model';
-import { validationResult } from 'express-validator';
 import { serverUrl } from '../helpers/helper';
 
 export async function listarPost (req: Request, res:Response){

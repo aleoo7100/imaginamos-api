@@ -2,7 +2,7 @@ import {Request, Response} from 'express';
 import User from '../models/User.model';
 import jwt from 'jsonwebtoken';
 import md5 from 'md5';
-import {check,validationResult } from 'express-validator';
+import {validationResult } from 'express-validator';
 
 export async function registro (req: Request, res:Response){
   try {
