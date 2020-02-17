@@ -7,7 +7,7 @@ export async function listarAmigo (req: Request, res:Response){
   try {
     const amigos = await Amigo.findAll({
       where:{usersId:req.user.id},
-      include: [{model: User , as: 'amigos', attributes: ['nombre', 'correo' ]  }],
+      include: [{model: User , as: 'amigos', attributes: ['nombre', 'correo','birtday' ]  }],
     })
 
     return res.json({
